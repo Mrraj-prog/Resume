@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Kumar - Cybersecurity Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Raj Kumar</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-300">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-300">Skills</a></li>
+                <li><a href="#education" class="hover:text-blue-300">Education</a></li>
+                <li><a href="#projects" class="hover:text-blue-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="menu" class="hidden md:hidden text-center">
+            <ul class="space-y-2 mt-4">
+                <li><a href="#home" class="block hover:text-blue-300">Home</a></li>
+                <li><a href="#about" class="block hover:text-blue-300">About</a></li>
+                <li><a href="#skills" class="block hover:text-blue-300">Skills</a></li>
+                <li><a href="#education" class="block hover:text-blue-300">Education</a></li>
+                <li><a href="#projects" class="block hover:text-blue-300">Projects</a></li>
+                <li><a href="#contact" class="block hover:text-blue-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-800 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">
+                <span id="typed"></span>
+            </h2>
+            <p class="text-xl mb-6">BCA Graduate | Cybersecurity Enthusiast | Ethical Hacker</p>
+            <a href="#contact" class="bg-blue-500 hover:bg-blue-600 hover:scale-105 transition transform py-2 px-4 rounded">Get in Touch</a>
+        </div>
+    </section>
+
+   
+  <!-- Contact Section -->
+  <!-- (your contact and footer remain the same) -->
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
+                Detail-oriented BCA graduate with hands-on experience in cybersecurity, VAPT, and networking. 
+                Proficient in ethical hacking tools and scripting. Passionate about CTFs and blogging on security trends. 
+                Seeking to contribute to network defense and security analysis.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-4 bg-white rounded shadow hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">Cybersecurity & VAPT</h3>
+                    <p class="text-gray-700">Burp Suite, Nmap, Nessus, Metasploit, OWASP Top 10 mitigation.</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">Networking</h3>
+                    <p class="text-gray-700">TCP/IP, OSI Model, DNS, VPNs, Firewalls, IDS/IPS.</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">OS & Scripting</h3>
+                    <p class="text-gray-700">Linux, Windows, Bash, PowerShell scripting.</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">Programming</h3>
+                    <p class="text-gray-700">C, C++, C#, JavaScript, HTML, CSS, Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Education</h2>
+            <div class="space-y-6 max-w-3xl mx-auto text-center">
+                <div>
+                    <h3 class="text-xl font-semibold">BCA</h3>
+                    <p class="text-gray-700">IMS College, Noida Sec-62 | 2020–2023</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">12th (Science)</h3>
+                    <p class="text-gray-700">K.P. College, Murliganj, Madhepura, Bihar</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">10th</h3>
+                    <p class="text-gray-700">Govt High School, Amari Murliganj, Madhepura, Bihar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">Mock VAPT</h3>
+                    <p class="text-gray-700">Assessed DVWA using Burp Suite and Nmap, mitigating SQL Injection and XSS vulnerabilities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">CTF Challenges</h3>
+                    <p class="text-gray-700">Solved 20+ tasks on TryHackMe/Hack The Box, focusing on network exploitation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold mb-2">Bash Automation</h3>
+                    <p class="text-gray-700">Built a script to automate Nmap scanning, reducing enumeration time by 30%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <p class="text-lg text-gray-700 mb-4">📍 Prince PG, Room No-G07, Noida Sector-62, Gautam Buddha Nagar – 201301 (UP)</p>
+            <p class="text-lg text-gray-700 mb-4">📞 <a href="tel:+918969710586" class="text-blue-600 hover:underline">+91 8969710586</a></p>
+            <p class="text-lg text-gray-700 mb-4">📧 <a href="mailto:kumarraj10403@gmail.com" class="text-blue-600 hover:underline">kumarraj10403@gmail.com</a></p>
+            <p class="text-lg text-gray-700 mb-4">🌐 <a href="https://www.linkedin.com/in/raj-kumar-55190025a" class="text-blue-600 hover:underline">LinkedIn Profile</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Raj Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // ScrollReveal animations
+        ScrollReveal().reveal('section', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '50px',
+            reset: true
+        });
+
+        // Typing Effect
+        const typedText = ["Raj Kumar"];
+        let index = 0, charIndex = 0;
+        function type() {
+            if (charIndex < typedText[index].length) {
+                document.getElementById("typed").textContent += typedText[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 150);
+            }
+        }
+        window.onload = type;
+    </script>
+
+</body>
+</html>
